@@ -13,7 +13,7 @@ void task_fn(void *arg) {
 }
 
 int main(int argc, char *argv[]) {
-    dbg_log_level(DLI_WARN);
+    // dbg_log_level(DLI_WARN);
     // Creates a scheduler.
     co_sched_t sched = co_sched_create();
     // Creates 10 tasks.

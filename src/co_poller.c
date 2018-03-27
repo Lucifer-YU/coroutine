@@ -10,6 +10,7 @@
 
 #define LOG_TAG "POLLER"
 
+#if 0   // Sys-hooks still in developing.
 static int co_poller_item_find_index(co_poller_t poller, int fd, void (*cb)(int fd, int events)) {
     assert(poller);
     for (nfds_t i = 0; i < poller->npfds; i++) {
@@ -67,6 +68,7 @@ static void co_poller_item_remove_at(co_poller_t poller, nfds_t index) {
     }
     poller->npfds--;
 }
+#endif
 
 co_poller_t co_poller_create() {
     LENTRY("()");
@@ -81,6 +83,7 @@ void co_poller_destroy(co_poller_t poller) {
     free(poller);
 }
 
+#if 0   // Sys-hooks still in developing.
 int co_poller_events_register(co_poller_t poller, int fd, int events, void (*cb)(int fd, int events)) {
     assert(poller);
     assert(fd != -1);
@@ -106,3 +109,4 @@ int co_poller_events_unregister(co_poller_t poller, int fd) {
 int co_poller_events_wait(co_poller_t poller, int milliseconds) {
     assert(poller);
 }
+#endif

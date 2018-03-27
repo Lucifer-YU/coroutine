@@ -12,9 +12,11 @@ typedef struct __co_task * co_task_t;
 typedef void (*co_poller_events_cb)(int fd, int events);
 
 typedef struct __co_poller {
+#if 0   // Sys-hooks still in developing.
     struct pollfd* pfds;
     nfds_t npfds;
     nfds_t max_npfds;
+#endif
     co_poller_events_cb* cbs;   // The twins of pfds, uses to stores event callbacks.
 } * co_poller_t;
 
