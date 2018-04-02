@@ -113,13 +113,16 @@ add_library(${TARGET} STATIC ${coroutine_SRCS})
 
 # Macro for add example target
 macro(add_example_target EXAMPLE_TARGET)
-    add_executable("example_${EXAMPLE_TARGET}" "examples/example_${EXAMPLE_TARGET}.c")
-    target_link_libraries("example_${EXAMPLE_TARGET}" co)
+#    add_executable("example_${EXAMPLE_TARGET}" "examples/example_${EXAMPLE_TARGET}.c")
+#    target_link_libraries("example_${EXAMPLE_TARGET}" co)
+    unset (example_SRC)
+    aux_source_directory(examples/${EXAMPLE_TARGET} example_SRC)
+    add_executable("example_${EXAMPLE_TARGET}" ${example_SRC})
+    target_link_libraries("example_${EXAMPLE_TARGET}" awsfx ${Iconv_LIBRARY} ${LIBXML2_LIBRARIES} ${OPENSSL_LIBRARIES} ${CURL_LIBRARIES})
 endmacro(add_example_target)
 
 add_example_target(basic)
-add_executable("example_cxx" "examples/example_cxx.cpp")
-target_link_libraries("example_cxx" co)
+add_example_target(cxx)
 
 
 # The Install targets
