@@ -77,6 +77,7 @@ elseif (WIN32)
     set (CMAKE_C_FLAGS_DEBUG "-D_CRT_SECURE_NO_WARNINGS ")
     set (CMAKE_C_FLAGS_RELEASE "-D_CRT_SECURE_NO_WARNINGS -DNDEBUG ")
 endif ()
+set (CMAKE_CXX_STANDARD 11)
 
 # Header & Source files
 include_directories (
@@ -117,6 +118,9 @@ macro(add_example_target EXAMPLE_TARGET)
 endmacro(add_example_target)
 
 add_example_target(basic)
+add_executable("example_cxx" "examples/example_cxx.cpp")
+target_link_libraries("example_cxx" co)
+
 
 # The Install targets
 file (GLOB TARGET_INCS ${CMAKE_SOURCE_DIR}/include/*.h)

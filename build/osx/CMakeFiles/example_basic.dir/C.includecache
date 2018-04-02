@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../.././include/co.h
+stddef.h
+-
+stdint.h
+-
+
+../.././src/dbg/dbgmsg.h
+stdio.h
+-
+
+/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_basic.c
+co.h
+-
+stdio.h
+-
+unistd.h
+-
+dbg/dbgmsg.h
+-
+

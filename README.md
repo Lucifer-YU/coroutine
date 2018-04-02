@@ -2,6 +2,15 @@
 
 A stateful coroutine library.
 
+Known support platforms:
+```
+Linux (GCC)
+Windows (Cygwin, MSVC x86/x64)
+Mac (GCC, Clang)
+```
+
+
+
 ## Build
 
 ### Clang on windows:

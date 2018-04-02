@@ -153,7 +153,7 @@ static int co_sched_do_runnables(co_sched_t sched) {
         // update task
         switch (task->state) {
             case CO_TASK_STATE_RUNNABLE:
-                // the task still running, enqueue it back.
+                // the task still running, put it back.
                 assert (sched->proc_mgr);
                 co_proc_switch_task(sched->proc_mgr, task);
                 break;
@@ -229,11 +229,11 @@ static int co_sched_run(co_sched_t sched, int flags) {
 co_poller_t co_sched_get_iowait_mgr(co_sched_t sched, int force) {
     LENTRY("(sched:%p, force:%d)", sched, force);
     assert(sched);
-    co_poller_t reactor = sched->iowait_mgr;
-    if (!reactor && force) {
-        // create the reactor if necessary.
-        reactor = sched->iowait_mgr = co_poller_create();
+    co_poller_t poller = sched->iowait_mgr;
+    if (!poller && force) {
+        // create the poller if necessary.
+        poller = sched->iowait_mgr = co_poller_create();
     }
-    LEXIT("(%p)", reactor);
-    return reactor;
+    LEXIT("(%p)", poller);
+    return poller;
 }
