@@ -118,7 +118,7 @@ macro(add_example_target EXAMPLE_TARGET)
     unset (example_SRC)
     aux_source_directory(examples/${EXAMPLE_TARGET} example_SRC)
     add_executable("example_${EXAMPLE_TARGET}" ${example_SRC})
-    target_link_libraries("example_${EXAMPLE_TARGET}" awsfx ${Iconv_LIBRARY} ${LIBXML2_LIBRARIES} ${OPENSSL_LIBRARIES} ${CURL_LIBRARIES})
+    target_link_libraries("example_${EXAMPLE_TARGET}" ${TARGET})
 endmacro(add_example_target)
 
 add_example_target(basic)

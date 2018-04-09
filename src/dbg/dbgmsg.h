@@ -29,11 +29,11 @@ extern "C" {
 #else
 
 typedef enum LOG_LEVEL {
-    DLI_ENTRY,
-    DLI_EXIT,
-    DLI_INFO,
-    DLI_WARN,
-    DLI_ERROR,
+    DLI_ENTRY = 0,
+    DLI_EXIT = 1,
+    DLI_INFO = 2,
+    DLI_WARN = 3,
+    DLI_ERROR = 4
 } LOG_LEVEL;
 
 void dbg_log_file(FILE *file);
