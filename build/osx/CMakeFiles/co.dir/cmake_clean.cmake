@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/co.dir/src/co.c.o"
-  "CMakeFiles/co.dir/src/co_poller.c.o"
+  "CMakeFiles/co.dir/src/co_mux.c.o"
   "CMakeFiles/co.dir/src/co_proc.c.o"
   "CMakeFiles/co.dir/src/co_sched.c.o"
   "CMakeFiles/co.dir/src/co_sleep.c.o"

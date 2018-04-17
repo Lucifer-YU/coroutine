@@ -12,7 +12,7 @@ stddef.h
 stdint.h
 -
 
-../.././src/co_poller.h
+../.././src/co_mux.h
 
 ../.././src/co_proc.h
 stddef.h
@@ -23,7 +23,7 @@ co.h
 -
 co_sleep.h
 -
-co_poller.h
+co_mux.h
 -
 stddef.h
 -
@@ -89,7 +89,7 @@ co_sleep.h
 -
 co_timer.h
 -
-co_poller.h
+co_mux.h
 -
 co_hooks.h
 -
@@ -110,7 +110,7 @@ ucontext.h
 pch.h
 -
 
-/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c
+/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_mux.c
 pch.h
 -
 sys/poll.h
@@ -219,7 +219,7 @@ co_sleep.h
 -
 co_timer.h
 -
-co_poller.h
+co_mux.h
 -
 co_hooks.h
 -

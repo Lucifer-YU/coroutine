@@ -32,9 +32,9 @@ void co_sched_destroy(co_sched_t sched) {
         // TODO cancel & destroy all sleeping tasks.
         co_sleep_destroy(sched->sleep_mgr);
     }
-    if (sched->iowait_mgr) {
+    if (sched->iomux_mgr) {
         // TODO awaken all blocking I/O operations.
-        co_poller_destroy(sched->iowait_mgr);
+        co_mux_destroy(sched->iomux_mgr);
     }
     free(sched);
 
@@ -226,13 +226,13 @@ static int co_sched_run(co_sched_t sched, int flags) {
     return runnable_count;
 }
 
-co_poller_t co_sched_get_iowait_mgr(co_sched_t sched, int force) {
+co_mux_t co_sched_get_iomux_mgr(co_sched_t sched, int force) {
     LENTRY("(sched:%p, force:%d)", sched, force);
     assert(sched);
-    co_poller_t poller = sched->iowait_mgr;
+    co_mux_t poller = sched->iomux_mgr;
     if (!poller && force) {
         // create the poller if necessary.
-        poller = sched->iowait_mgr = co_poller_create();
+        poller = sched->iomux_mgr = co_mux_create();
     }
     LEXIT("(%p)", poller);
     return poller;

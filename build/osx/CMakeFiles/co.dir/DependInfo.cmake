@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_poller.c.o"
+  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_mux.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_mux.c.o"
   "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_proc.c.o"
   "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sched.c.o"
   "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sleep.c.o"

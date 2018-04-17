@@ -8,7 +8,7 @@
 #include <pch.h>
 #include <co_epoll.h>
 #include <co_fdctx.h>
-#include <co_poller.h>
+#include <co_mux.h>
 
 #include <errno.h>
 #include <sys/fcntl.h>
@@ -92,13 +92,13 @@ int co_fdctx_add_poll_events(co_fdctx_t fdctx, int poll_events, co_sched_t sched
     poll_events &= (POLLIN | POLLOUT); // strip err, hup, rdhup ...
     if (poll_events & ~fdctx->pending_events) {
         uint32_t events = fdctx->pending_events | poll_events;
-        co_poller_t reactor = co_sched_get_iowait_mgr(sched, 1);
+        co_mux_t reactor = co_sched_get_iomux_mgr(sched, 1);
         if (!fdctx->pending_events) {
             // add events
-            retval = co_poller_register(reactor, fdctx->fd, events);
+            retval = co_mux_register(reactor, fdctx->fd, events);
         } else {
             // modify events
-            retval = co_poller_edit(reactor, fdctx->fd, events);
+            retval = co_mux_edit(reactor, fdctx->fd, events);
         }
         fdctx->pending_events = events;
     }

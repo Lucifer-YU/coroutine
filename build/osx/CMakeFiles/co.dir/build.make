@@ -84,28 +84,28 @@ CMakeFiles/co.dir/src/co.c.o.provides: CMakeFiles/co.dir/src/co.c.o.requires
 CMakeFiles/co.dir/src/co.c.o.provides.build: CMakeFiles/co.dir/src/co.c.o
 
 
-CMakeFiles/co.dir/src/co_poller.c.o: CMakeFiles/co.dir/flags.make
-CMakeFiles/co.dir/src/co_poller.c.o: ../../src/co_poller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/co.dir/src/co_poller.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_poller.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c
+CMakeFiles/co.dir/src/co_mux.c.o: CMakeFiles/co.dir/flags.make
+CMakeFiles/co.dir/src/co_mux.c.o: ../../src/co_mux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/co.dir/src/co_mux.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_mux.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_mux.c
 
-CMakeFiles/co.dir/src/co_poller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_poller.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c > CMakeFiles/co.dir/src/co_poller.c.i
+CMakeFiles/co.dir/src/co_mux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_mux.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_mux.c > CMakeFiles/co.dir/src/co_mux.c.i
 
-CMakeFiles/co.dir/src/co_poller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_poller.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c -o CMakeFiles/co.dir/src/co_poller.c.s
+CMakeFiles/co.dir/src/co_mux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_mux.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_mux.c -o CMakeFiles/co.dir/src/co_mux.c.s
 
-CMakeFiles/co.dir/src/co_poller.c.o.requires:
+CMakeFiles/co.dir/src/co_mux.c.o.requires:
 
-.PHONY : CMakeFiles/co.dir/src/co_poller.c.o.requires
+.PHONY : CMakeFiles/co.dir/src/co_mux.c.o.requires
 
-CMakeFiles/co.dir/src/co_poller.c.o.provides: CMakeFiles/co.dir/src/co_poller.c.o.requires
-	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_poller.c.o.provides.build
-.PHONY : CMakeFiles/co.dir/src/co_poller.c.o.provides
+CMakeFiles/co.dir/src/co_mux.c.o.provides: CMakeFiles/co.dir/src/co_mux.c.o.requires
+	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_mux.c.o.provides.build
+.PHONY : CMakeFiles/co.dir/src/co_mux.c.o.provides
 
-CMakeFiles/co.dir/src/co_poller.c.o.provides.build: CMakeFiles/co.dir/src/co_poller.c.o
+CMakeFiles/co.dir/src/co_mux.c.o.provides.build: CMakeFiles/co.dir/src/co_mux.c.o
 
 
 CMakeFiles/co.dir/src/co_proc.c.o: CMakeFiles/co.dir/flags.make
@@ -327,7 +327,7 @@ CMakeFiles/co.dir/src/unix/co_context.c.o.provides.build: CMakeFiles/co.dir/src/
 # Object files for target co
 co_OBJECTS = \
 "CMakeFiles/co.dir/src/co.c.o" \
-"CMakeFiles/co.dir/src/co_poller.c.o" \
+"CMakeFiles/co.dir/src/co_mux.c.o" \
 "CMakeFiles/co.dir/src/co_proc.c.o" \
 "CMakeFiles/co.dir/src/co_sched.c.o" \
 "CMakeFiles/co.dir/src/co_sleep.c.o" \
@@ -342,7 +342,7 @@ co_OBJECTS = \
 co_EXTERNAL_OBJECTS =
 
 libco.a: CMakeFiles/co.dir/src/co.c.o
-libco.a: CMakeFiles/co.dir/src/co_poller.c.o
+libco.a: CMakeFiles/co.dir/src/co_mux.c.o
 libco.a: CMakeFiles/co.dir/src/co_proc.c.o
 libco.a: CMakeFiles/co.dir/src/co_sched.c.o
 libco.a: CMakeFiles/co.dir/src/co_sleep.c.o
@@ -364,7 +364,7 @@ CMakeFiles/co.dir/build: libco.a
 .PHONY : CMakeFiles/co.dir/build
 
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co.c.o.requires
-CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_poller.c.o.requires
+CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_mux.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_proc.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_sched.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_sleep.c.o.requires

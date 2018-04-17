@@ -6,76 +6,73 @@
 #include <assert.h>
 
 // Copy constructor and assignment operator are forbidden.
-#define NONCOPYABLE(name) \
+#ifndef noncopyable
+#define noncopyable(name) \
   private:                \
     name(const name &);   \
     name &operator=(const name &);
+#endif
+
+#ifdef _WIN32
+#ifndef __thread
+#define __thread __declspec(thread)
+#endif
+#endif
 
 namespace co {
 class sched {
-    NONCOPYABLE(sched)
+    noncopyable(sched)
 
   private:
     co_sched_t _sched;
+    static __thread sched* __tls;
 
   public:
     sched() {
         assert(!co_sched_self());
+        assert(!__tls);
         _sched = co_sched_create();
+        __tls = this;
     }
     ~sched() {
         co_sched_destroy(_sched);
+        __tls = nullptr;
     }
+    static sched* current() {
+        return __tls;
+     }
     template <typename Fn>
     void go(const Fn &fn, int stackSize = 0) {
+        typedef std::function<void()> FnWarp;
         co_sched_create_task(_sched, stackSize,
             [](void *arg) {
-                const Fn *pfn = (Fn *) arg;
+                FnWarp* pfn = reinterpret_cast<FnWarp*>(arg);
                 (*pfn)();
+                delete pfn;
             },
-            (void *) &fn);
+            new FnWarp(fn));
     }
     int runloop() {
         return co_sched_runloop(_sched);
     }
 };
 
+__thread sched* sched::__tls;
+
 void yield() {
     co_yield();
 }
+
 template<typename Fn>
 void go(const Fn &fn, int stackSize = 0) {
-    co_sched_t sched = co_sched_self();
+    sched* sched = sched::current();
     assert(sched);
-    co_sched_create_task(sched, stackSize,
-        [](void *arg) {
-            const Fn *pfn = (Fn *) arg;
-            (*pfn)();
-        },
-        (void *) &fn);
-}
-template<typename Fn, typename ... Args>
-void go1(const Fn& fn, Args ... args) {
-    co_sched_t sched = co_sched_self();
-    assert(sched);
-    co_sched_create_task(sched, 0,
-        [&args](void *arg) {
-            const Fn *pfn = (Fn *) arg;
-            (*pfn)(std::forward<Args>(args)...);
-        },
-        (void *) &fn);
+    sched->go(fn, stackSize);
 }
 
 }; // namespace co
 
-void a(int x, float y, void* z) {
-    printf("a(x:%d,y:%f,z:%p)\n", x, y, z);
-}
-
 void co_main(int argc, char* argv[]) {
-    printf("hello, world!\n");
-    co::go1(a, 1, 1.0, (void*)NULL);
-    /*
     co::go([argc, argv] {
         printf("task #1 -> argc:%d, argv:%p\n", argc, argv);
         for (int i = 0; i < 10; i++) {
@@ -92,7 +89,6 @@ void co_main(int argc, char* argv[]) {
             co::yield();
         }
     });
-    */
 }
 
 int main(int argc, char *argv[]) {

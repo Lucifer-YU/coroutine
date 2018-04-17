@@ -31,7 +31,7 @@
 #include <co_task.h>
 #include <co_sleep.h>
 #include <co_timer.h>
-#include <co_poller.h>
+#include <co_mux.h>
 
 #ifdef ENABLE_SYSHOOKS
 #include <co_hooks.h>
