@@ -46,10 +46,10 @@ RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine
+CMAKE_SOURCE_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx
+CMAKE_BINARY_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx
 
 # Include any dependencies generated for this target.
 include CMakeFiles/example_basic.dir/depend.make
@@ -60,42 +60,42 @@ include CMakeFiles/example_basic.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/example_basic.dir/flags.make
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.o: CMakeFiles/example_basic.dir/flags.make
-CMakeFiles/example_basic.dir/examples/example_basic.c.o: ../../examples/example_basic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/example_basic.dir/examples/example_basic.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_basic.dir/examples/example_basic.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_basic.c
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o: CMakeFiles/example_basic.dir/flags.make
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o: ../../examples/basic/example_basic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/examples/basic/example_basic.c
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_basic.dir/examples/example_basic.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_basic.c > CMakeFiles/example_basic.dir/examples/example_basic.c.i
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_basic.dir/examples/basic/example_basic.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/examples/basic/example_basic.c > CMakeFiles/example_basic.dir/examples/basic/example_basic.c.i
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_basic.dir/examples/example_basic.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_basic.c -o CMakeFiles/example_basic.dir/examples/example_basic.c.s
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_basic.dir/examples/basic/example_basic.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/examples/basic/example_basic.c -o CMakeFiles/example_basic.dir/examples/basic/example_basic.c.s
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.o.requires:
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.requires:
 
-.PHONY : CMakeFiles/example_basic.dir/examples/example_basic.c.o.requires
+.PHONY : CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.requires
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.o.provides: CMakeFiles/example_basic.dir/examples/example_basic.c.o.requires
-	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/example_basic.c.o.provides.build
-.PHONY : CMakeFiles/example_basic.dir/examples/example_basic.c.o.provides
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.provides: CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.requires
+	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.provides.build
+.PHONY : CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.provides
 
-CMakeFiles/example_basic.dir/examples/example_basic.c.o.provides.build: CMakeFiles/example_basic.dir/examples/example_basic.c.o
+CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.provides.build: CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o
 
 
 # Object files for target example_basic
 example_basic_OBJECTS = \
-"CMakeFiles/example_basic.dir/examples/example_basic.c.o"
+"CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o"
 
 # External object files for target example_basic
 example_basic_EXTERNAL_OBJECTS =
 
-example_basic: CMakeFiles/example_basic.dir/examples/example_basic.c.o
+example_basic: CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o
 example_basic: CMakeFiles/example_basic.dir/build.make
 example_basic: libco.a
 example_basic: CMakeFiles/example_basic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable example_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable example_basic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_basic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -103,7 +103,7 @@ CMakeFiles/example_basic.dir/build: example_basic
 
 .PHONY : CMakeFiles/example_basic.dir/build
 
-CMakeFiles/example_basic.dir/requires: CMakeFiles/example_basic.dir/examples/example_basic.c.o.requires
+CMakeFiles/example_basic.dir/requires: CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o.requires
 
 .PHONY : CMakeFiles/example_basic.dir/requires
 
@@ -112,6 +112,6 @@ CMakeFiles/example_basic.dir/clean:
 .PHONY : CMakeFiles/example_basic.dir/clean
 
 CMakeFiles/example_basic.dir/depend:
-	cd /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/example_basic.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/Samsung_T3/dev/c_cxx/coroutine /Volumes/Samsung_T3/dev/c_cxx/coroutine /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/example_basic.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/example_basic.dir/depend
 

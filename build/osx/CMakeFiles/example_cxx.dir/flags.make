@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./include -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./src -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./src/unix 
+CXX_INCLUDES = -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./include -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./src -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./src/unix 
 

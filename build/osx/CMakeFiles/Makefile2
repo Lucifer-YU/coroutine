@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine
+CMAKE_SOURCE_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx
+CMAKE_BINARY_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx
 
 #=============================================================================
 # Target rules for target CMakeFiles/co.dir
@@ -69,7 +69,7 @@ CMAKE_BINARY_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build
 CMakeFiles/co.dir/all:
 	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/depend
 	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target co"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target co"
 .PHONY : CMakeFiles/co.dir/all
 
 # Include target in all.
@@ -79,9 +79,9 @@ all: CMakeFiles/co.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/co.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/co.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 0
 .PHONY : CMakeFiles/co.dir/rule
 
 # Convenience name for target.
@@ -106,7 +106,7 @@ clean: CMakeFiles/co.dir/clean
 CMakeFiles/example_basic.dir/all: CMakeFiles/co.dir/all
 	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/depend
 	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=13,14 "Built target example_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=13,14 "Built target example_basic"
 .PHONY : CMakeFiles/example_basic.dir/all
 
 # Include target in all.
@@ -116,9 +116,9 @@ all: CMakeFiles/example_basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/example_basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example_basic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 0
 .PHONY : CMakeFiles/example_basic.dir/rule
 
 # Convenience name for target.
@@ -143,7 +143,7 @@ clean: CMakeFiles/example_basic.dir/clean
 CMakeFiles/example_cxx.dir/all: CMakeFiles/co.dir/all
 	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/depend
 	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=15,16 "Built target example_cxx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=15,16 "Built target example_cxx"
 .PHONY : CMakeFiles/example_cxx.dir/all
 
 # Include target in all.
@@ -153,9 +153,9 @@ all: CMakeFiles/example_cxx.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/example_cxx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example_cxx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 0
 .PHONY : CMakeFiles/example_cxx.dir/rule
 
 # Convenience name for target.

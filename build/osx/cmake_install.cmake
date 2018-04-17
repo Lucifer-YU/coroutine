@@ -1,8 +1,8 @@
-# Install script for directory: /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine
+# Install script for directory: /Volumes/Samsung_T3/dev/c_cxx/coroutine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx")
+  set(CMAKE_INSTALL_PREFIX "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./include/co.h"
-    "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./include/coxx.h"
+    "/Volumes/Samsung_T3/dev/c_cxx/coroutine/./include/co.h"
+    "/Volumes/Samsung_T3/dev/c_cxx/coroutine/./include/coxx.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/libco.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/libco.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libco.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libco.a")
     execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libco.a")
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

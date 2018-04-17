@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_basic.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/example_basic.dir/examples/example_basic.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/examples/basic/example_basic.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
@@ -18,7 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/DependInfo.cmake"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

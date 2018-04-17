@@ -3,7 +3,7 @@
 
 CMakeFiles/co.dir/src/co.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -13,11 +13,11 @@ CMakeFiles/co.dir/src/co.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co.c
  config.h
-CMakeFiles/co.dir/src/co_poller.c.o
+CMakeFiles/co.dir/src/co_mux.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -27,11 +27,11 @@ CMakeFiles/co.dir/src/co_poller.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_mux.c
  config.h
 CMakeFiles/co.dir/src/co_proc.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -40,12 +40,12 @@ CMakeFiles/co.dir/src/co_proc.c.o
  ../.././src/dbg/dbgalloc.h
  ../.././src/dbg/dbgmsg.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/pch.h
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_proc.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/pch.h
  config.h
 CMakeFiles/co.dir/src/co_sched.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -54,12 +54,12 @@ CMakeFiles/co.dir/src/co_sched.c.o
  ../.././src/dbg/dbgalloc.h
  ../.././src/dbg/dbgmsg.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/pch.h
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sched.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/pch.h
  config.h
 CMakeFiles/co.dir/src/co_sleep.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -69,11 +69,11 @@ CMakeFiles/co.dir/src/co_sleep.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sleep.c
  config.h
 CMakeFiles/co.dir/src/co_task.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -83,11 +83,11 @@ CMakeFiles/co.dir/src/co_task.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_task.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_task.c
  config.h
 CMakeFiles/co.dir/src/co_timer.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -97,24 +97,24 @@ CMakeFiles/co.dir/src/co_timer.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_timer.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_timer.c
  config.h
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.o
  ../.././src/spinlock.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgalloc.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgalloc.c
  config.h
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/spinlock.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgmsg.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgmsg.c
  config.h
 CMakeFiles/co.dir/src/spinlock.c.o
  ../.././src/spinlock.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/spinlock.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/spinlock.c
  config.h
 CMakeFiles/co.dir/src/unix/co_context.c.o
  ../.././include/co.h
- ../.././src/co_poller.h
+ ../.././src/co_mux.h
  ../.././src/co_proc.h
  ../.././src/co_sched.h
  ../.././src/co_sleep.h
@@ -124,5 +124,5 @@ CMakeFiles/co.dir/src/unix/co_context.c.o
  ../.././src/dbg/dbgmsg.h
  ../.././src/pch.h
  ../.././src/unix/co_context.h
- /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/unix/co_context.c
+ /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/unix/co_context.c
  config.h

@@ -51,10 +51,10 @@ RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine
+CMAKE_SOURCE_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx
+CMAKE_BINARY_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -129,9 +129,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,59 +198,59 @@ example_cxx/fast:
 	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/build
 .PHONY : example_cxx/fast
 
-examples/example_basic.o: examples/example_basic.c.o
+examples/basic/example_basic.o: examples/basic/example_basic.c.o
 
-.PHONY : examples/example_basic.o
-
-# target to build an object file
-examples/example_basic.c.o:
-	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/example_basic.c.o
-.PHONY : examples/example_basic.c.o
-
-examples/example_basic.i: examples/example_basic.c.i
-
-.PHONY : examples/example_basic.i
-
-# target to preprocess a source file
-examples/example_basic.c.i:
-	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/example_basic.c.i
-.PHONY : examples/example_basic.c.i
-
-examples/example_basic.s: examples/example_basic.c.s
-
-.PHONY : examples/example_basic.s
-
-# target to generate assembly for a file
-examples/example_basic.c.s:
-	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/example_basic.c.s
-.PHONY : examples/example_basic.c.s
-
-examples/example_cxx.o: examples/example_cxx.cpp.o
-
-.PHONY : examples/example_cxx.o
+.PHONY : examples/basic/example_basic.o
 
 # target to build an object file
-examples/example_cxx.cpp.o:
-	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o
-.PHONY : examples/example_cxx.cpp.o
+examples/basic/example_basic.c.o:
+	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o
+.PHONY : examples/basic/example_basic.c.o
 
-examples/example_cxx.i: examples/example_cxx.cpp.i
+examples/basic/example_basic.i: examples/basic/example_basic.c.i
 
-.PHONY : examples/example_cxx.i
+.PHONY : examples/basic/example_basic.i
 
 # target to preprocess a source file
-examples/example_cxx.cpp.i:
-	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.i
-.PHONY : examples/example_cxx.cpp.i
+examples/basic/example_basic.c.i:
+	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/basic/example_basic.c.i
+.PHONY : examples/basic/example_basic.c.i
 
-examples/example_cxx.s: examples/example_cxx.cpp.s
+examples/basic/example_basic.s: examples/basic/example_basic.c.s
 
-.PHONY : examples/example_cxx.s
+.PHONY : examples/basic/example_basic.s
 
 # target to generate assembly for a file
-examples/example_cxx.cpp.s:
-	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.s
-.PHONY : examples/example_cxx.cpp.s
+examples/basic/example_basic.c.s:
+	$(MAKE) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/examples/basic/example_basic.c.s
+.PHONY : examples/basic/example_basic.c.s
+
+examples/cxx/example_cxx.o: examples/cxx/example_cxx.cpp.o
+
+.PHONY : examples/cxx/example_cxx.o
+
+# target to build an object file
+examples/cxx/example_cxx.cpp.o:
+	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o
+.PHONY : examples/cxx/example_cxx.cpp.o
+
+examples/cxx/example_cxx.i: examples/cxx/example_cxx.cpp.i
+
+.PHONY : examples/cxx/example_cxx.i
+
+# target to preprocess a source file
+examples/cxx/example_cxx.cpp.i:
+	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.i
+.PHONY : examples/cxx/example_cxx.cpp.i
+
+examples/cxx/example_cxx.s: examples/cxx/example_cxx.cpp.s
+
+.PHONY : examples/cxx/example_cxx.s
+
+# target to generate assembly for a file
+examples/cxx/example_cxx.cpp.s:
+	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.s
+.PHONY : examples/cxx/example_cxx.cpp.s
 
 src/co.o: src/co.c.o
 
@@ -279,32 +279,32 @@ src/co.c.s:
 	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co.c.s
 .PHONY : src/co.c.s
 
-src/co_poller.o: src/co_poller.c.o
+src/co_mux.o: src/co_mux.c.o
 
-.PHONY : src/co_poller.o
+.PHONY : src/co_mux.o
 
 # target to build an object file
-src/co_poller.c.o:
-	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_poller.c.o
-.PHONY : src/co_poller.c.o
+src/co_mux.c.o:
+	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_mux.c.o
+.PHONY : src/co_mux.c.o
 
-src/co_poller.i: src/co_poller.c.i
+src/co_mux.i: src/co_mux.c.i
 
-.PHONY : src/co_poller.i
+.PHONY : src/co_mux.i
 
 # target to preprocess a source file
-src/co_poller.c.i:
-	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_poller.c.i
-.PHONY : src/co_poller.c.i
+src/co_mux.c.i:
+	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_mux.c.i
+.PHONY : src/co_mux.c.i
 
-src/co_poller.s: src/co_poller.c.s
+src/co_mux.s: src/co_mux.c.s
 
-.PHONY : src/co_poller.s
+.PHONY : src/co_mux.s
 
 # target to generate assembly for a file
-src/co_poller.c.s:
-	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_poller.c.s
-.PHONY : src/co_poller.c.s
+src/co_mux.c.s:
+	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_mux.c.s
+.PHONY : src/co_mux.c.s
 
 src/co_proc.o: src/co_proc.c.o
 
@@ -564,18 +564,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... example_cxx"
-	@echo "... examples/example_basic.o"
-	@echo "... examples/example_basic.i"
-	@echo "... examples/example_basic.s"
-	@echo "... examples/example_cxx.o"
-	@echo "... examples/example_cxx.i"
-	@echo "... examples/example_cxx.s"
+	@echo "... examples/basic/example_basic.o"
+	@echo "... examples/basic/example_basic.i"
+	@echo "... examples/basic/example_basic.s"
+	@echo "... examples/cxx/example_cxx.o"
+	@echo "... examples/cxx/example_cxx.i"
+	@echo "... examples/cxx/example_cxx.s"
 	@echo "... src/co.o"
 	@echo "... src/co.i"
 	@echo "... src/co.s"
-	@echo "... src/co_poller.o"
-	@echo "... src/co_poller.i"
-	@echo "... src/co_poller.s"
+	@echo "... src/co_mux.o"
+	@echo "... src/co_mux.i"
+	@echo "... src/co_mux.s"
 	@echo "... src/co_proc.o"
 	@echo "... src/co_proc.i"
 	@echo "... src/co_proc.s"

@@ -46,10 +46,10 @@ RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine
+CMAKE_SOURCE_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx
+CMAKE_BINARY_DIR = /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx
 
 # Include any dependencies generated for this target.
 include CMakeFiles/co.dir/depend.make
@@ -62,16 +62,16 @@ include CMakeFiles/co.dir/flags.make
 
 CMakeFiles/co.dir/src/co.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co.c.o: ../../src/co.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/co.dir/src/co.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/co.dir/src/co.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co.c
 
 CMakeFiles/co.dir/src/co.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c > CMakeFiles/co.dir/src/co.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co.c > CMakeFiles/co.dir/src/co.c.i
 
 CMakeFiles/co.dir/src/co.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c -o CMakeFiles/co.dir/src/co.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co.c -o CMakeFiles/co.dir/src/co.c.s
 
 CMakeFiles/co.dir/src/co.c.o.requires:
 
@@ -84,42 +84,42 @@ CMakeFiles/co.dir/src/co.c.o.provides: CMakeFiles/co.dir/src/co.c.o.requires
 CMakeFiles/co.dir/src/co.c.o.provides.build: CMakeFiles/co.dir/src/co.c.o
 
 
-CMakeFiles/co.dir/src/co_poller.c.o: CMakeFiles/co.dir/flags.make
-CMakeFiles/co.dir/src/co_poller.c.o: ../../src/co_poller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/co.dir/src/co_poller.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_poller.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c
+CMakeFiles/co.dir/src/co_mux.c.o: CMakeFiles/co.dir/flags.make
+CMakeFiles/co.dir/src/co_mux.c.o: ../../src/co_mux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/co.dir/src/co_mux.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_mux.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_mux.c
 
-CMakeFiles/co.dir/src/co_poller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_poller.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c > CMakeFiles/co.dir/src/co_poller.c.i
+CMakeFiles/co.dir/src/co_mux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_mux.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_mux.c > CMakeFiles/co.dir/src/co_mux.c.i
 
-CMakeFiles/co.dir/src/co_poller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_poller.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c -o CMakeFiles/co.dir/src/co_poller.c.s
+CMakeFiles/co.dir/src/co_mux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_mux.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_mux.c -o CMakeFiles/co.dir/src/co_mux.c.s
 
-CMakeFiles/co.dir/src/co_poller.c.o.requires:
+CMakeFiles/co.dir/src/co_mux.c.o.requires:
 
-.PHONY : CMakeFiles/co.dir/src/co_poller.c.o.requires
+.PHONY : CMakeFiles/co.dir/src/co_mux.c.o.requires
 
-CMakeFiles/co.dir/src/co_poller.c.o.provides: CMakeFiles/co.dir/src/co_poller.c.o.requires
-	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_poller.c.o.provides.build
-.PHONY : CMakeFiles/co.dir/src/co_poller.c.o.provides
+CMakeFiles/co.dir/src/co_mux.c.o.provides: CMakeFiles/co.dir/src/co_mux.c.o.requires
+	$(MAKE) -f CMakeFiles/co.dir/build.make CMakeFiles/co.dir/src/co_mux.c.o.provides.build
+.PHONY : CMakeFiles/co.dir/src/co_mux.c.o.provides
 
-CMakeFiles/co.dir/src/co_poller.c.o.provides.build: CMakeFiles/co.dir/src/co_poller.c.o
+CMakeFiles/co.dir/src/co_mux.c.o.provides.build: CMakeFiles/co.dir/src/co_mux.c.o
 
 
 CMakeFiles/co.dir/src/co_proc.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co_proc.c.o: ../../src/co_proc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/co.dir/src/co_proc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_proc.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/co.dir/src/co_proc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_proc.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_proc.c
 
 CMakeFiles/co.dir/src/co_proc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_proc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c > CMakeFiles/co.dir/src/co_proc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_proc.c > CMakeFiles/co.dir/src/co_proc.c.i
 
 CMakeFiles/co.dir/src/co_proc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_proc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c -o CMakeFiles/co.dir/src/co_proc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_proc.c -o CMakeFiles/co.dir/src/co_proc.c.s
 
 CMakeFiles/co.dir/src/co_proc.c.o.requires:
 
@@ -134,16 +134,16 @@ CMakeFiles/co.dir/src/co_proc.c.o.provides.build: CMakeFiles/co.dir/src/co_proc.
 
 CMakeFiles/co.dir/src/co_sched.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co_sched.c.o: ../../src/co_sched.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/co.dir/src/co_sched.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_sched.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/co.dir/src/co_sched.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_sched.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sched.c
 
 CMakeFiles/co.dir/src/co_sched.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_sched.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c > CMakeFiles/co.dir/src/co_sched.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sched.c > CMakeFiles/co.dir/src/co_sched.c.i
 
 CMakeFiles/co.dir/src/co_sched.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_sched.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c -o CMakeFiles/co.dir/src/co_sched.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sched.c -o CMakeFiles/co.dir/src/co_sched.c.s
 
 CMakeFiles/co.dir/src/co_sched.c.o.requires:
 
@@ -158,16 +158,16 @@ CMakeFiles/co.dir/src/co_sched.c.o.provides.build: CMakeFiles/co.dir/src/co_sche
 
 CMakeFiles/co.dir/src/co_sleep.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co_sleep.c.o: ../../src/co_sleep.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/co.dir/src/co_sleep.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_sleep.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/co.dir/src/co_sleep.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_sleep.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sleep.c
 
 CMakeFiles/co.dir/src/co_sleep.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_sleep.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c > CMakeFiles/co.dir/src/co_sleep.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sleep.c > CMakeFiles/co.dir/src/co_sleep.c.i
 
 CMakeFiles/co.dir/src/co_sleep.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_sleep.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c -o CMakeFiles/co.dir/src/co_sleep.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sleep.c -o CMakeFiles/co.dir/src/co_sleep.c.s
 
 CMakeFiles/co.dir/src/co_sleep.c.o.requires:
 
@@ -182,16 +182,16 @@ CMakeFiles/co.dir/src/co_sleep.c.o.provides.build: CMakeFiles/co.dir/src/co_slee
 
 CMakeFiles/co.dir/src/co_task.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co_task.c.o: ../../src/co_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/co.dir/src/co_task.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_task.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/co.dir/src/co_task.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_task.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_task.c
 
 CMakeFiles/co.dir/src/co_task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_task.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_task.c > CMakeFiles/co.dir/src/co_task.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_task.c > CMakeFiles/co.dir/src/co_task.c.i
 
 CMakeFiles/co.dir/src/co_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_task.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_task.c -o CMakeFiles/co.dir/src/co_task.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_task.c -o CMakeFiles/co.dir/src/co_task.c.s
 
 CMakeFiles/co.dir/src/co_task.c.o.requires:
 
@@ -206,16 +206,16 @@ CMakeFiles/co.dir/src/co_task.c.o.provides.build: CMakeFiles/co.dir/src/co_task.
 
 CMakeFiles/co.dir/src/co_timer.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/co_timer.c.o: ../../src/co_timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/co.dir/src/co_timer.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_timer.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/co.dir/src/co_timer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/co_timer.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_timer.c
 
 CMakeFiles/co.dir/src/co_timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/co_timer.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_timer.c > CMakeFiles/co.dir/src/co_timer.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_timer.c > CMakeFiles/co.dir/src/co_timer.c.i
 
 CMakeFiles/co.dir/src/co_timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/co_timer.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_timer.c -o CMakeFiles/co.dir/src/co_timer.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_timer.c -o CMakeFiles/co.dir/src/co_timer.c.s
 
 CMakeFiles/co.dir/src/co_timer.c.o.requires:
 
@@ -230,16 +230,16 @@ CMakeFiles/co.dir/src/co_timer.c.o.provides.build: CMakeFiles/co.dir/src/co_time
 
 CMakeFiles/co.dir/src/spinlock.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/spinlock.c.o: ../../src/spinlock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/co.dir/src/spinlock.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/spinlock.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/spinlock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/co.dir/src/spinlock.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/spinlock.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/spinlock.c
 
 CMakeFiles/co.dir/src/spinlock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/spinlock.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/spinlock.c > CMakeFiles/co.dir/src/spinlock.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/spinlock.c > CMakeFiles/co.dir/src/spinlock.c.i
 
 CMakeFiles/co.dir/src/spinlock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/spinlock.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/spinlock.c -o CMakeFiles/co.dir/src/spinlock.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/spinlock.c -o CMakeFiles/co.dir/src/spinlock.c.s
 
 CMakeFiles/co.dir/src/spinlock.c.o.requires:
 
@@ -254,16 +254,16 @@ CMakeFiles/co.dir/src/spinlock.c.o.provides.build: CMakeFiles/co.dir/src/spinloc
 
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.o: ../../src/dbg/dbgalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/co.dir/src/dbg/dbgalloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/dbg/dbgalloc.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/co.dir/src/dbg/dbgalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/dbg/dbgalloc.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgalloc.c
 
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/dbg/dbgalloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgalloc.c > CMakeFiles/co.dir/src/dbg/dbgalloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgalloc.c > CMakeFiles/co.dir/src/dbg/dbgalloc.c.i
 
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/dbg/dbgalloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgalloc.c -o CMakeFiles/co.dir/src/dbg/dbgalloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgalloc.c -o CMakeFiles/co.dir/src/dbg/dbgalloc.c.s
 
 CMakeFiles/co.dir/src/dbg/dbgalloc.c.o.requires:
 
@@ -278,16 +278,16 @@ CMakeFiles/co.dir/src/dbg/dbgalloc.c.o.provides.build: CMakeFiles/co.dir/src/dbg
 
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.o: ../../src/dbg/dbgmsg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/co.dir/src/dbg/dbgmsg.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/dbg/dbgmsg.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgmsg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/co.dir/src/dbg/dbgmsg.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/dbg/dbgmsg.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgmsg.c
 
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/dbg/dbgmsg.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgmsg.c > CMakeFiles/co.dir/src/dbg/dbgmsg.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgmsg.c > CMakeFiles/co.dir/src/dbg/dbgmsg.c.i
 
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/dbg/dbgmsg.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgmsg.c -o CMakeFiles/co.dir/src/dbg/dbgmsg.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgmsg.c -o CMakeFiles/co.dir/src/dbg/dbgmsg.c.s
 
 CMakeFiles/co.dir/src/dbg/dbgmsg.c.o.requires:
 
@@ -302,16 +302,16 @@ CMakeFiles/co.dir/src/dbg/dbgmsg.c.o.provides.build: CMakeFiles/co.dir/src/dbg/d
 
 CMakeFiles/co.dir/src/unix/co_context.c.o: CMakeFiles/co.dir/flags.make
 CMakeFiles/co.dir/src/unix/co_context.c.o: ../../src/unix/co_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/co.dir/src/unix/co_context.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/unix/co_context.c.o   -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/unix/co_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/co.dir/src/unix/co_context.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/co.dir/src/unix/co_context.c.o   -c /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/unix/co_context.c
 
 CMakeFiles/co.dir/src/unix/co_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/co.dir/src/unix/co_context.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/unix/co_context.c > CMakeFiles/co.dir/src/unix/co_context.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/unix/co_context.c > CMakeFiles/co.dir/src/unix/co_context.c.i
 
 CMakeFiles/co.dir/src/unix/co_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/co.dir/src/unix/co_context.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/unix/co_context.c -o CMakeFiles/co.dir/src/unix/co_context.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/Samsung_T3/dev/c_cxx/coroutine/src/unix/co_context.c -o CMakeFiles/co.dir/src/unix/co_context.c.s
 
 CMakeFiles/co.dir/src/unix/co_context.c.o.requires:
 
@@ -327,7 +327,7 @@ CMakeFiles/co.dir/src/unix/co_context.c.o.provides.build: CMakeFiles/co.dir/src/
 # Object files for target co
 co_OBJECTS = \
 "CMakeFiles/co.dir/src/co.c.o" \
-"CMakeFiles/co.dir/src/co_poller.c.o" \
+"CMakeFiles/co.dir/src/co_mux.c.o" \
 "CMakeFiles/co.dir/src/co_proc.c.o" \
 "CMakeFiles/co.dir/src/co_sched.c.o" \
 "CMakeFiles/co.dir/src/co_sleep.c.o" \
@@ -342,7 +342,7 @@ co_OBJECTS = \
 co_EXTERNAL_OBJECTS =
 
 libco.a: CMakeFiles/co.dir/src/co.c.o
-libco.a: CMakeFiles/co.dir/src/co_poller.c.o
+libco.a: CMakeFiles/co.dir/src/co_mux.c.o
 libco.a: CMakeFiles/co.dir/src/co_proc.c.o
 libco.a: CMakeFiles/co.dir/src/co_sched.c.o
 libco.a: CMakeFiles/co.dir/src/co_sleep.c.o
@@ -354,7 +354,7 @@ libco.a: CMakeFiles/co.dir/src/dbg/dbgmsg.c.o
 libco.a: CMakeFiles/co.dir/src/unix/co_context.c.o
 libco.a: CMakeFiles/co.dir/build.make
 libco.a: CMakeFiles/co.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libco.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libco.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/co.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/co.dir/link.txt --verbose=$(VERBOSE)
 
@@ -364,7 +364,7 @@ CMakeFiles/co.dir/build: libco.a
 .PHONY : CMakeFiles/co.dir/build
 
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co.c.o.requires
-CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_poller.c.o.requires
+CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_mux.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_proc.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_sched.c.o.requires
 CMakeFiles/co.dir/requires: CMakeFiles/co.dir/src/co_sleep.c.o.requires
@@ -382,6 +382,6 @@ CMakeFiles/co.dir/clean:
 .PHONY : CMakeFiles/co.dir/clean
 
 CMakeFiles/co.dir/depend:
-	cd /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/Samsung_T3/dev/c_cxx/coroutine /Volumes/Samsung_T3/dev/c_cxx/coroutine /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx /Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/co.dir/depend
 

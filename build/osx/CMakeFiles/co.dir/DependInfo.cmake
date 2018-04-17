@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_poller.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_poller.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_proc.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_proc.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sched.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sched.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_sleep.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sleep.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_task.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_task.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/co_timer.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_timer.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgalloc.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/dbg/dbgalloc.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/dbg/dbgmsg.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/dbg/dbgmsg.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/spinlock.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/spinlock.c.o"
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/src/unix/co_context.c" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/unix/co_context.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_mux.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_mux.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_proc.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_proc.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sched.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sched.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_sleep.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_sleep.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_task.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_task.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/co_timer.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/co_timer.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgalloc.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/dbg/dbgalloc.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/dbg/dbgmsg.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/dbg/dbgmsg.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/spinlock.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/spinlock.c.o"
+  "/Volumes/Samsung_T3/dev/c_cxx/coroutine/src/unix/co_context.c" "/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir/src/unix/co_context.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

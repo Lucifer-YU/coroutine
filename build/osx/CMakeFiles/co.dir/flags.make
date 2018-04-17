@@ -6,5 +6,5 @@ C_FLAGS =  -O0 -Wall -g -ggdb
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./include -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./src -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx -I/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/./src/unix 
+C_INCLUDES = -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./include -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./src -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx -I/Volumes/Samsung_T3/dev/c_cxx/coroutine/./src/unix 
 
