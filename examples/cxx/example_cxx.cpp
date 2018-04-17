@@ -3,10 +3,7 @@
 #include <functional>
 #include <stdio.h>
 #include <stdlib.h>
-
-void test1(int a, float b, void *c) {
-    printf("test1(a:%d,b:%f,c:%p)\n", a, b, c);
-}
+#include <assert.h>
 
 // Copy constructor and assignment operator are forbidden.
 #define NONCOPYABLE(name) \
@@ -23,17 +20,15 @@ class sched {
 
   public:
     sched() {
-        assert(!co_sched_ct());
+        assert(!co_sched_self());
         _sched = co_sched_create();
     }
     ~sched() {
         co_sched_destroy(_sched);
     }
     template <typename Fn>
-    void go(const Fn &fn) {
-        co_sched_create_task(
-            _sched,
-            0,
+    void go(const Fn &fn, int stackSize = 0) {
+        co_sched_create_task(_sched, stackSize,
             [](void *arg) {
                 const Fn *pfn = (Fn *) arg;
                 (*pfn)();
@@ -41,24 +36,52 @@ class sched {
             (void *) &fn);
     }
     int runloop() {
-        co_sched_runloop(_sched);
+        return co_sched_runloop(_sched);
     }
 };
 
 void yield() {
     co_yield();
 }
+template<typename Fn>
+void go(const Fn &fn, int stackSize = 0) {
+    co_sched_t sched = co_sched_self();
+    assert(sched);
+    co_sched_create_task(sched, stackSize,
+        [](void *arg) {
+            const Fn *pfn = (Fn *) arg;
+            (*pfn)();
+        },
+        (void *) &fn);
+}
+template<typename Fn, typename ... Args>
+void go1(const Fn& fn, Args ... args) {
+    co_sched_t sched = co_sched_self();
+    assert(sched);
+    co_sched_create_task(sched, 0,
+        [&args](void *arg) {
+            const Fn *pfn = (Fn *) arg;
+            (*pfn)(std::forward<Args>(args)...);
+        },
+        (void *) &fn);
+}
 
 }; // namespace co
 
-int co_main(int argc, char* argv[]) {
+void a(int x, float y, void* z) {
+    printf("a(x:%d,y:%f,z:%p)\n", x, y, z);
+}
+
+void co_main(int argc, char* argv[]) {
+    printf("hello, world!\n");
+    co::go1(a, 1, 1.0, (void*)NULL);
     /*
-    sched.go([&sched, argc, argv] {
+    co::go([argc, argv] {
         printf("task #1 -> argc:%d, argv:%p\n", argc, argv);
         for (int i = 0; i < 10; i++) {
             printf("task #1 -> i = %d\n", i);
             if (i == 3) {
-                sched.go([] {
+                co::go([] {
                     printf("task #2");
                     for (int j = 0; j < 10; j++) {
                         printf("task #2 -> j = %d\n", j);
@@ -70,15 +93,12 @@ int co_main(int argc, char* argv[]) {
         }
     });
     */
-    return 0;
 }
+
 int main(int argc, char *argv[]) {
     dbg_log_level(DLI_WARN);
     co::sched sched;
-    sched.go(co_main);
+    sched.go([argc, argv] { co_main(argc, argv); });
     sched.runloop();
-
-    printf("exit......\n");
-
     return 0;
 }

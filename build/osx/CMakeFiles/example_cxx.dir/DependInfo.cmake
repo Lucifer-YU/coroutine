@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_cxx.cpp" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o"
+  "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/cxx/example_cxx.cpp" "/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

@@ -85,7 +85,7 @@ int co_sched_sleep(co_sched_t sched, uint32_t msec) {
 int co_sched_runloop(co_sched_t sched) {
     int retval = 0;
     LENTRY("(sched:%p)", sched);
-    if (co_task_ct()) {
+    if (co_task_self()) {
         LOGW("cannot call runloop within coroutine task.");
     } else {
         while (sched->runnable_count) {
@@ -115,7 +115,7 @@ int co_sched_push_runnable(co_sched_t sched, co_task_t task) {
     return 0;
 }
 
-co_sched_t co_sched_ct() {
+co_sched_t co_sched_self() {
     LENTRY("()");
     LEXIT("(%p)", __co_sched_ct);
     return __co_sched_ct;
@@ -193,7 +193,7 @@ static int co_sched_do_sleeps(co_sched_t sched, int *next_delay_ms) {
 static int co_sched_run(co_sched_t sched, int flags) {
     LENTRY("(sched:%p, flags:%d)", sched, flags);
     assert(sched);
-    assert(!co_task_ct());
+    assert(!co_task_self());
 
     // set thread local scheduler.
     __co_sched_ct = sched;

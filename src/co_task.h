@@ -38,7 +38,7 @@ struct __co_task {
 co_task_t co_task_create(co_sched_t sched, size_t stack_size, void (*start_routine)(void *), void *arg);
 void co_task_destroy(co_task_t task);
 
-co_task_t co_task_ct();
+// already defined in co.h -- co_task_t co_task_self();
 int co_task_swapin(co_task_t task);
 int co_task_swapout(co_task_t task);
 

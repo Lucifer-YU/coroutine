@@ -60,38 +60,38 @@ include CMakeFiles/example_cxx.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/example_cxx.dir/flags.make
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o: CMakeFiles/example_cxx.dir/flags.make
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o: ../../examples/example_cxx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_cxx.cpp
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o: CMakeFiles/example_cxx.dir/flags.make
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o: ../../examples/cxx/example_cxx.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/build/osx/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o -c /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/cxx/example_cxx.cpp
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_cxx.cpp > CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.i
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/cxx/example_cxx.cpp > CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.i
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/example_cxx.cpp -o CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.s
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Lucifer/Documents/dev/workspaces/c_cxx/coroutine/examples/cxx/example_cxx.cpp -o CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.s
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.requires:
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.requires:
 
-.PHONY : CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.requires
+.PHONY : CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.requires
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.provides: CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.requires
-	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.provides.build
-.PHONY : CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.provides
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.provides: CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.requires
+	$(MAKE) -f CMakeFiles/example_cxx.dir/build.make CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.provides.build
+.PHONY : CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.provides
 
-CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.provides.build: CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o
+CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.provides.build: CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o
 
 
 # Object files for target example_cxx
 example_cxx_OBJECTS = \
-"CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o"
+"CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o"
 
 # External object files for target example_cxx
 example_cxx_EXTERNAL_OBJECTS =
 
-example_cxx: CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o
+example_cxx: CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o
 example_cxx: CMakeFiles/example_cxx.dir/build.make
 example_cxx: libco.a
 example_cxx: CMakeFiles/example_cxx.dir/link.txt
@@ -103,7 +103,7 @@ CMakeFiles/example_cxx.dir/build: example_cxx
 
 .PHONY : CMakeFiles/example_cxx.dir/build
 
-CMakeFiles/example_cxx.dir/requires: CMakeFiles/example_cxx.dir/examples/example_cxx.cpp.o.requires
+CMakeFiles/example_cxx.dir/requires: CMakeFiles/example_cxx.dir/examples/cxx/example_cxx.cpp.o.requires
 
 .PHONY : CMakeFiles/example_cxx.dir/requires
 

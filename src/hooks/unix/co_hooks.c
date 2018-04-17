@@ -60,7 +60,7 @@ unsigned int sleep(unsigned int seconds) {
 	unsigned int retval = 0;
 	co_hooks_init();
 
-	co_sched_t sched = co_sched_ct();
+	co_sched_t sched = co_sched_self();
 	if (__co_hooks_enabled && (sched && sched->current_task)) {
 		// hook enabled & required.
 		int ms = seconds * 1000;
@@ -79,7 +79,7 @@ int usleep(useconds_t usec) {
 	int retval;
 	co_hooks_init();
 
-	co_sched_t sched = co_sched_ct();
+	co_sched_t sched = co_sched_self();
 	if (__co_hooks_enabled && (sched && sched->current_task)) {
 		int ms = usec / 1000;
 		retval = co_sched_sleep(sched, ms);
@@ -96,7 +96,7 @@ int nanosleep(const struct timespec *req, struct timespec *rem) {
 	int retval;
 	co_hooks_init();
 
-	co_sched_t sched = co_sched_ct();
+	co_sched_t sched = co_sched_self();
 	if (__co_hooks_enabled && (sched && sched->current_task)) {
 		int ms = req->tv_sec * 1000 + req->tv_nsec / 1000000;
 		retval = co_sched_sleep(sched, ms);
@@ -115,7 +115,7 @@ int connect(int fd, const struct sockaddr *addr, socklen_t addrlen) {
 	co_hooks_init();
 
 	// call sys api directly if hooks does not enabled, or not under coroutine task currently.
-	co_sched_t sched = co_sched_ct();
+	co_sched_t sched = co_sched_self();
 	if (!__co_hooks_enabled || !(sched && sched->current_task)) {
 		retval = connect_impl(fd, addr, addrlen);
 		goto exit;
@@ -170,7 +170,7 @@ static int co_poll_impl(struct pollfd *fds, nfds_t nfds, int timeout, int pre_ch
 	co_hooks_init();
 
 	// call sys api directly if hooks does not enabled, or not under coroutine task currently.
-	co_sched_t sched = co_sched_ct();
+	co_sched_t sched = co_sched_self();
 	if (!__co_hooks_enabled || !(sched && sched->current_task)) {
 		retval = poll_impl(fds, nfds, timeout);
 		goto exit;
