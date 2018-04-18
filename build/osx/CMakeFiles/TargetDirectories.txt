@@ -1,9 +1,0 @@
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/install/local.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/install/strip.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/install.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/list_install_components.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/co.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/example_basic.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/rebuild_cache.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/edit_cache.dir
-/Volumes/Samsung_T3/dev/c_cxx/coroutine/build/osx/CMakeFiles/example_cxx.dir

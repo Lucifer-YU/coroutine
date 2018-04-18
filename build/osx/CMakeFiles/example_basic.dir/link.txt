@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -O0 -Wall -g -ggdb  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/example_basic.dir/examples/basic/example_basic.c.o  -o example_basic libco.a 

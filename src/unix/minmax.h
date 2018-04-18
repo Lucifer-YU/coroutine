@@ -1,10 +1,3 @@
-/*
- * minmax.h
- *
- *  Created on: Feb 8, 2018
- *      Author: Lucifer
- */
-
 /**
  * This file has no copyright assigned and is placed in the Public Domain.
  * This file is part of the mingw-w64 runtime package.

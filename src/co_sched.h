@@ -10,7 +10,7 @@
 
 #include <co.h>
 #include <co_sleep.h>
-#include <co_poller.h>
+#include <co_mux.h>
 #include <stddef.h>
 
 #ifdef __cplusplus
@@ -30,7 +30,7 @@ struct __co_sched {
 
     co_proc_t proc_mgr;
     co_sleep_t sleep_mgr;
-    co_poller_t iowait_mgr;
+    co_mux_t iowait_mgr;
 };
 
 int co_sched_push_runnable(co_sched_t sched, co_task_t task);
@@ -40,7 +40,7 @@ int co_sched_yield(co_sched_t sched);
 int co_sched_sleep(co_sched_t sched, uint32_t msec);
 
 // internal helpers
-co_poller_t co_sched_get_iowait_mgr(co_sched_t sched, int force);
+co_mux_t co_sched_get_iowait_mgr(co_sched_t sched, int force);
 
 #ifdef __cplusplus
 }
