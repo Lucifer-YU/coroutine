@@ -30,17 +30,17 @@ struct __co_sched {
 
     co_proc_t proc_mgr;
     co_sleep_t sleep_mgr;
-    co_mux_t iowait_mgr;
+    co_mux_t iomux_mgr;
 };
 
 int co_sched_push_runnable(co_sched_t sched, co_task_t task);
 co_task_t co_sched_pop_runnable(co_sched_t sched);
-co_sched_t co_sched_ct();
+// already defined in co.h -- co_sched_t co_sched_self();
 int co_sched_yield(co_sched_t sched);
 int co_sched_sleep(co_sched_t sched, uint32_t msec);
 
 // internal helpers
-co_mux_t co_sched_get_iowait_mgr(co_sched_t sched, int force);
+co_mux_t co_sched_get_iomux_mgr(co_sched_t sched, int force);
 
 #ifdef __cplusplus
 }

@@ -72,7 +72,7 @@ int co_task_swapout(co_task_t task) {
     return retval;
 }
 
-co_task_t co_task_ct() {
-    co_sched_t sched = co_sched_ct();
+co_task_t co_task_self() {
+    co_sched_t sched = co_sched_self();
     return sched ? sched->current_task : NULL;
 }
