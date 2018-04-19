@@ -33,8 +33,8 @@ struct __co_sched {
     co_mux_t iomux_mgr;
 };
 
-int co_sched_push_runnable(co_sched_t sched, co_task_t task);
-co_task_t co_sched_pop_runnable(co_sched_t sched);
+int co_sched_resume_task(co_sched_t sched, co_task_t task);
+
 // already defined in co.h -- co_sched_t co_sched_self();
 int co_sched_yield(co_sched_t sched);
 int co_sched_sleep(co_sched_t sched, uint32_t msec);

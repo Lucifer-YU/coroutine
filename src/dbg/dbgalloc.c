@@ -95,7 +95,7 @@ void dbg_leaks_report(FILE *file) {
     dbg_block_t block = __dbg_block_first;
     fprintf(file, "---- LEAK REPORT BEGIN ----\n");
     while (block) {
-        fprintf(file, "---- leak address:%p, size:%lu, file:%s (%d)\n", block + 1, block->size, block->file, block->line);
+        fprintf(file, "---- leak address:%p, size:%lu, file:%s (%d)\n", block + 1, (unsigned long) block->size, block->file, block->line);
         block = block->next;
     }
     fprintf(file, "---- LEAK REPORT END ----\n");

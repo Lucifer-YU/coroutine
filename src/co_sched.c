@@ -47,7 +47,9 @@ int co_sched_create_task(co_sched_t sched, size_t stack_size, void (*start_routi
     co_task_t task = co_task_create(sched, stack_size, start_routine, arg);
 
     // add to scheduler
-    int retval = co_sched_push_runnable(sched, task);
+    int retval = co_sched_resume_task(sched, task);
+    // update runnable count.
+    sched->runnable_count++;
 
     return retval;
 }
@@ -97,7 +99,7 @@ int co_sched_runloop(co_sched_t sched) {
     return retval;
 }
 
-int co_sched_push_runnable(co_sched_t sched, co_task_t task) {
+int co_sched_resume_task(co_sched_t sched, co_task_t task) {
     LENTRY("(sched:%p,task:%p)", sched, task);
     assert(sched);
     assert(task);
@@ -109,8 +111,6 @@ int co_sched_push_runnable(co_sched_t sched, co_task_t task) {
     }
     co_proc_switch_task(sched->proc_mgr, task);
 
-    // update runnable count.
-    sched->runnable_count++;
     LEXIT("(%d)", 0);
     return 0;
 }

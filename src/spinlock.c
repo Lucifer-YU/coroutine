@@ -3,6 +3,11 @@
 #include <spinlock.h>
 
 #include <sched.h>
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <pthread.h>
+#endif
 
 /**
  * Lock a spin lock object.

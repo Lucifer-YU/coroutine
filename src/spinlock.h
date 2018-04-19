@@ -8,8 +8,6 @@
 #ifndef __SPINLOCK_H__
 #define __SPINLOCK_H__
 
-#include <pthread.h>
-
 typedef long spinlock_t;
 
 /**

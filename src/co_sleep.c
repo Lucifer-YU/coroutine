@@ -111,7 +111,7 @@ static void co_sleep_wakeup_task(co_sleep_t sleep, co_task_t task) {
 
     // put it back to scheduler's runnable queue.
     task->next = task->prev = NULL;
-    co_sched_push_runnable(sleep->sched, task);
+    co_sched_resume_task(sleep->sched, task);
 
     LEXIT("()");
 }

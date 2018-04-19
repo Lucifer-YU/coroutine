@@ -1,6 +1,6 @@
 # coroutine
 
-A stateful coroutine library.
+A asymmetric stateful coroutine library.
 
 Known support platforms:
 ```
