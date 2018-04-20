@@ -1,96 +1,80 @@
-#include <assert.h>
+#include <arpa/inet.h>
 #include <co.h>
+#include <coxx.h>
 #include <dbg/dbgmsg.h>
-#include <functional>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h> // strerror
+#include <sys/fcntl.h>
+#include <sys/socket.h>
+#include <unistd.h>
 
-// Copy constructor and assignment operator are forbidden.
-#ifndef noncopyable
-#define noncopyable(name) \
-  private:                \
-    name(const name &);   \
-    name &operator=(const name &);
-#endif
-
-#ifdef _WIN32
-#ifndef __thread
-#define __thread __declspec(thread)
-#endif
-#endif
-
-namespace co {
-class sched {
-    noncopyable(sched)
-
-        private : co_sched_t _sched;
-    static __thread sched *__tls;
-
-  public:
-    sched() {
-        assert(!co_sched_self());
-        assert(!__tls);
-        _sched = co_sched_create();
-        __tls = this;
+void connection(int fd) {
+    char buf[1024];
+    // Set to non-blocking mode.
+    int flags = fcntl(fd, F_GETFL, 0);
+    if (!(flags & O_NONBLOCK))
+        fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+    // Waiting for data.
+retry_read:
+    co::yield();
+    int n = read(fd, buf, sizeof(buf));
+    if (n == -1) {
+        if (EAGAIN == errno || EINTR == errno)
+            goto retry_read;
+        fprintf(stderr, "read error:%s\n", strerror(errno));
+        goto exit;
+    } else if (n == 0) {
+        fprintf(stderr, "read eof\n");
+        goto exit;
     }
-    ~sched() {
-        co_sched_destroy(_sched);
-        __tls = nullptr;
-    }
-    static sched *current() {
-        return __tls;
-    }
-    template <typename Fn>
-    void go(const Fn &fn, int stackSize = 0) {
-        typedef std::function<void()> FnWarp;
-        co_sched_create_task(_sched, stackSize,
-                             [](void *arg) {
-                                 FnWarp *pfn = reinterpret_cast<FnWarp *>(arg);
-                                 (*pfn)();
-                                 delete pfn;
-                             },
-                             new FnWarp(fn));	// should stores the wrapper in a list.
-    }
-    int runloop() {
-        return co_sched_runloop(_sched);
-    }
-};
-
-__thread sched *sched::__tls;
-
-void yield() {
-    co_yield();
-}
-void sleep(uint32_t msec) {
-    co_sleep(msec);
-}
-template <typename Fn>
-void go(const Fn &fn, int stackSize = 0) {
-    sched *sched = sched::current();
-    assert(sched);
-    sched->go(fn, stackSize);
+    // Echo
+    co::yield();
+    write(fd, buf, n);
+exit:
+    co::yield();
+    shutdown(fd, SHUT_RDWR);
+    close(fd);
 }
 
-}; // namespace co
-
-void consumer(int value) {
-    co::sleep(10);
-    printf("value=%d\n", value);
-}
-
-void producer() {
-    for (int i = 0; i < 5; i++) {
-        if (i % 5 == 0) {
-            co::go([i] { consumer(i); });
-        }
+void listener() {
+    // Creates a server socket listen on 127.0.0.1:1234
+    int fd = socket(AF_INET, SOCK_STREAM, 0);
+    sockaddr_in addr;
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(1234);
+    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    socklen_t len = sizeof(addr);
+    if (-1 == bind(fd, (sockaddr *) &addr, len)) {
+        fprintf(stderr, "bind error, please change the port value.\n");
+        return;
+    }
+    if (-1 == listen(fd, 5)) {
+        fprintf(stderr, "listen error.\n");
+        return;
+    }
+    // Set to non-blocking mode.
+    int flags = fcntl(fd, F_GETFL, 0);
+    if (!(flags & O_NONBLOCK))
+        fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+    // Waiting for incoming connections.
+    for (;;) {
         co::yield();
+        int sockFd = accept(fd, (sockaddr *) &addr, &len);
+        if (sockFd == -1) {
+            if (EAGAIN == errno || EINTR == errno)
+                continue;
+            fprintf(stderr, "accept error:%s\n", strerror(errno));
+            return;
+        }
+        co::go([sockFd] { connection(sockFd); });
     }
 }
 
 int main(int argc, char *argv[]) {
-    dbg_log_level(DLI_ENTRY);
+    dbg_log_level(DLI_WARN);
     co::sched sched;
-    sched.go(producer);
+    sched.go(listener);
     sched.runloop();
     return 0;
 }
