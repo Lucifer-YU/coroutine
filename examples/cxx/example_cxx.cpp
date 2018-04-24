@@ -10,6 +10,7 @@
 #include <unistd.h>
 
 void connection(int fd) {
+    printf("new incoming fd(%d) accepted.\n", fd);
     char buf[1024];
     // Set to non-blocking mode.
     int flags = fcntl(fd, F_GETFL, 0);
@@ -38,6 +39,7 @@ exit:
 }
 
 void listener() {
+    printf("listening on 127.0.0.1:1234...\n");
     // Creates a server socket listen on 127.0.0.1:1234
     int fd = socket(AF_INET, SOCK_STREAM, 0);
     sockaddr_in addr;
